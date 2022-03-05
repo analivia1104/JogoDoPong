@@ -1,0 +1,46 @@
+° <!DOCTYPE html> // declaração de versão do HTML
+
+
+°position: absolute; // configuração de estética
+
+
+°left: 50%; // configuração de estética == largura
+
+
+°op: 20%; // configuração de estética == largura
+
+
+°background-color: black; // configuração de estética == cor de 
+fundo 
+
+°margin-top: 00px; // configuração de estética == altura
+
+
+°margin-left: -300px; // configuração de estética == altura
+
+
+°<canvas height="600" width="600" id="mycanvas">O seu browser 
+não supota esse elemento</canvas> // avisando se o tamanho 
+colocado nn esta indicado
+
+°var canvas = document.getElementById // pega o id do canva
+?var ctx = canvas.getContext// coloca o jogo como 2d
+
+°var bola = {
+x: canvas.width / 2 - 15,
+y:canvas.height / 2 -15,
+altura: 30,
+largura: 30,
+dirx: -1,
+diry: 1,
+mod: 0,
+speed: 1
+};// configurações da bola
+
+°document.addEventListener// esperando o alvo
+
+°function movebloco // mover o bloco
+
+°O que eu julgo fazer o jogo correr:
+bola.x += (bola.speed + bola.mod) * bola.dirx;
+bola.y += (bola.speed + bola.mod) *  bola.diry;
